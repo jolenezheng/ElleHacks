@@ -28,7 +28,51 @@ app.get('/receipt', (res, req) => {
       });
       axios.post('https://d96bb644.ngrok.io/receiptData', {
           parameters: {
-            data: items
+            data: [{
+                item: "Ground Beef",
+                price: 11.32
+              },
+              {
+                item: "Lays Chips",
+                price: 5
+              },
+              {
+                item: "Banana",
+                price: 3.23
+              },
+              {
+                item: "Lamb Loin Chops",
+                price: 8.99
+              },
+              {
+                item: "Kraft Cheddar",
+                price: 7.98
+              },
+              {
+                item: "BurnBrae Eggs L",
+                price: 4.25
+              },
+              {
+                item: "Apples 2lb Bag",
+                price: 5.67
+              },
+              {
+                item: "PC Bacon",
+                price: 11.98
+              },
+              {
+                item: "Great Value Tuna",
+                price: 9.98
+              },
+              {
+                item: "Lettuce Iceberg",
+                price: 2.47
+              },
+              {
+                item: "Quaker Granola",
+                price: 9.54
+              },
+            ]
           }
         })
         .then(function (response) {

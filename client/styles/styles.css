@@ -23,6 +23,7 @@
     margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 .title {
   font-size: 30px;
 }
@@ -30,9 +31,31 @@
 .green {
   color: green;
 }
+=======
+.footprint {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .average-footprint {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .your-footprint {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 68%;
+  }
+>>>>>>> origin/frontend
 
 #navbar-example2 {
     margin-top: 25px;
+}
+
+.upload {
+    margin-top: 10px;
 }
 
 /* The switch - the box around the slider */

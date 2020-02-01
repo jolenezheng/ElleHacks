@@ -1,11 +1,10 @@
-$(function(){
-  console.log('ready');
-  window.addEventListener("devicelight", function (event) {
-    // Read out the lux value
-  
-    var luminosity = event.value;
-  
-    alert(luminosity);
-  
-  });
-});
+var file = 'receipt1.jpeg'
+module.exports.file = file;
+// $(function () {
+//   var parameters = {
+//     file: 'receipt1.jpeg'
+//   };
+//   $.get('/test', parameters, function (data) {
+//     this.log(data);
+//   });
+// });

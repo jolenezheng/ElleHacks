@@ -23,6 +23,14 @@
     margin-bottom: 10px;
 }
 
+.title {
+  font-size: 30px;
+}
+
+.green {
+  color: green;
+}
+
 #navbar-example2 {
     margin-top: 25px;
 }
@@ -105,4 +113,53 @@ footer {
     padding: 15px;
 }
 .row.content {height:auto;} 
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.item-text {
+  font-size: 20px;
+}
+
+.company-text {
+  font-size: 12px;
+}
+
+.waste-col {
+  color: rgb(104, 77, 54);
+  background-color: rgb(247, 234, 222);
+}
+
+.pkg-col {
+  color: rgb(54, 74, 104);
+  background-color: rgb(226, 236, 250);
+}
+
+.co2-col {
+  color: rgb(77, 77, 77);
+  background-color: rgb(233, 230, 230);
+}
+
+.waste-style {
+  color: rgb(114, 79, 48);
+  outline: 1px solid rgb(207, 152, 107);
+  background-color: rgb(247, 234, 222);
+}
+
+.pkg-style {
+  color: rgb(54, 74, 104);
+  outline: 1px solid rgb(118, 160, 214);
+  background-color: rgb(222, 232, 245);
+}
+
+.co2-style {
+  color: rgb(80, 80, 80);
+  outline: 1px solid rgb(194, 194, 194);
+  background-color: rgb(240, 240, 240);
 }

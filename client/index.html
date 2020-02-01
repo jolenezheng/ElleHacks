@@ -4,11 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+
   <link rel="stylesheet" href="styles/styles.css" type="text/css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
   <script src="src/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="../server/app.js"></script>
   <title>ElleHacks</title>
@@ -16,15 +20,16 @@
 
 <body>
 
-<div class="container-fluid header-bar">
-  <div class="navbar-header">
-    <h1 class="logo">FoodPrint</h1>
+  <div class="container-fluid header-bar">
+    <div class="navbar-header">
+      <span class="logo title">Food</span>
+      <span class="logo title green">Print</span>
+    </div>
   </div>
-</div>
-  
-<div class="container-fluid text-center">    
-    <div class="col-sm-6 text-left"> 
-      <h2 class="date">Febuary 1, 2020</h2>
+
+  <div class="container-fluid text-center">
+    <div class="col-sm-6 text-left">
+      <h2 class="date">Febuary 2, 2020</h2>
       <div class="footprint">
         <img class="average-footprint"></img>
         <img class="your-footprint"></img>
@@ -39,13 +44,13 @@
           <option value="Russia">Russia</option>
           <option value="United Kingdom">United Kingdom</option>
           <option value="United States of America">United States of America</option>
-       </select>
-       </div>
+        </select>
+      </div>
     </div>
     <div class="col-sm-6 sidenav">
       <div class="row">
         <div class="col-sm-4">
-          <div class="card">
+          <div class="card co2-style">
             <div class="card-body">
               <h5 class="card-title">CO2</h5>
               <img class="card-img"></img>
@@ -55,7 +60,7 @@
         </div>
         <div class="col-sm-4">
           <div class="card">
-            <div class="card-body">
+            <div class="card-body pkg-style">
               <h5 class="card-title">PACKAGING</h5>
               <img class="card-img"></img>
               <h6 class="card-text">Go somewhere</h6>
@@ -63,7 +68,7 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card">
+          <div class="card waste-style">
             <div class="card-body">
               <h5 class="card-title">WASTE</h5>
               <img class="card-img"></img>
@@ -74,16 +79,41 @@
       </div>
       <div class="col-sm-16">
         <div id="navbar-example2" class="card-header navbar-light bg-light">
-            <h2>Eco-friendly options:</h2>
+          <h2>Eco-friendly options:</h2>
         </div>
         <div data-spy="scroll" data-offset="0">
           <ul class="list-group">
-            <li class="list-group-item" id="dynamic">Cras justo odio</li>
-            <li class="list-group-item" id="mdo">Dapibus ac facilisis in</li>
-            <li class="list-group-item" id="one">Morbi leo risus</li>
-            <li class="list-group-item" id="two">Porta ac consectetur ac</li>
-            <li class="list-group-item" id="three">Vestibulum at eros</li>
-            <li class="list-group-item" id="dynamic">Cras justo odio</li>
+            <li class="list-group-item waste-col py-5" id="dynamic">
+              <span class="left">Cras justo odio</span>
+              <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 30%</i>
+            </li>
+            <li class="list-group-item co2-col py-5" id="dynamic">
+              <span class="left">Cras justo odio</span>
+              <div data-toggle="tooltip" data-placement="top" title="Hooray!">
+                <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 18%</i>
+              </div>
+            </li>
+            <li class="list-group-item pkg-col py-5" id="dynamic">
+              <h1 class="left item-text">Bananas</h1>
+              <h2 class="left company-text">Walmart</h2>
+              <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 9%</i>
+            </li>
+            <li class="list-group-item waste-col py-5" id="dynamic">
+              <span class="left">Cras justo odio</span>
+              <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 39%</i>
+            </li>
+            <li class="list-group-item co2-col py-5" id="dynamic">
+              <span class="left">Cras justo odio</span>
+              <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 84%</i>
+            </li>
+            <li class="list-group-item co2-col py-5" id="dynamic">
+              <span class="left">Cras justo odio</span>
+              <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 84%</i>
+            </li>
+            <li class="list-group-item pkg-col py-5" id="dynamic">
+              <span class="left">Cras justo odio</span>
+              <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 9%</i>
+            </li>
           </ul>
         </div>
       </div>
@@ -93,10 +123,11 @@
       </label>
     </div>
   </div>
-</div>
+  </div>
 
-<footer class="container-fluid text-center">
-</footer>
+  <footer class="container-fluid text-center">
+  </footer>
 
 </body>
+
 </html>

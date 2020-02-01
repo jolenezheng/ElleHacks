@@ -1,6 +1,13 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
   <link rel="stylesheet" href="styles/styles.css" type="text/css">
   <script src="src/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="../server/app.js"></script>
@@ -8,9 +15,88 @@
 </head>
 
 <body>
-  <div>
-    Html
-  </div>
-</body>
 
+<div class="container-fluid header-bar">
+  <div class="navbar-header">
+    <h1 class="logo">FoodPrint</h1>
+  </div>
+</div>
+  
+<div class="container-fluid text-center">    
+    <div class="col-sm-6 text-left"> 
+      <h2 class="date">Febuary 1, 2020</h2>
+      <div class="footprint">
+        <img class="average-footprint"></img>
+        <img class="your-footprint"></img>
+      </div>
+      <hr>
+      <div>
+        <select id="country" name="country">
+          <option value="Canada">Canada</option>
+          <option value="China">China</option>
+          <option value="India">India</option>
+          <option value="Jamaica">Jamaica</option>
+          <option value="Russia">Russia</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="United States of America">United States of America</option>
+       </select>
+       </div>
+    </div>
+    <div class="col-sm-6 sidenav">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">CO2</h5>
+              <img class="card-img"></img>
+              <h6 class="card-text">Go somewhere</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">PACKAGING</h5>
+              <img class="card-img"></img>
+              <h6 class="card-text">Go somewhere</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">WASTE</h5>
+              <img class="card-img"></img>
+              <h6 class="card-text">Go somewhere</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-16">
+        <div id="navbar-example2" class="card-header navbar-light bg-light">
+            <h2>Eco-friendly options:</h2>
+        </div>
+        <div data-spy="scroll" data-offset="0">
+          <ul class="list-group">
+            <li class="list-group-item" id="dynamic">Cras justo odio</li>
+            <li class="list-group-item" id="mdo">Dapibus ac facilisis in</li>
+            <li class="list-group-item" id="one">Morbi leo risus</li>
+            <li class="list-group-item" id="two">Porta ac consectetur ac</li>
+            <li class="list-group-item" id="three">Vestibulum at eros</li>
+            <li class="list-group-item" id="dynamic">Cras justo odio</li>
+          </ul>
+        </div>
+      </div>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+</footer>
+
+</body>
 </html>

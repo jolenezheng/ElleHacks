@@ -54,19 +54,31 @@
           <div class="col-md-4">
             <div class="card card-1">
               <h3 class="row">CO2</h3>
-              <h3 id="co2-avg" class="row" style="position:absolute; bottom: 0px;">7%</h3>
+              <h3 id="co2-avg" class="row" style="position:absolute; bottom: 0px; width: 65%;">
+                <span id="co2-val-before" class="left">37</span>%
+                <i class="fas fa-arrow-right d-none"></i>
+                <span id="co2-val-after" class="right d-none green" style="position:absolute; right: 0px;">48%</span>
+              </h3>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card card-2">
               <h3 class="row">Packaging</h3>
-              <h3 id="pkg-avg" class="row" style="position:absolute; bottom: 0px;">7%</h3>
+              <h3 id="pkg-avg" class="row" style="position:absolute; bottom: 0px; width: 65%;">
+                <span id="pkg-val-before" class="left">19</span>%
+                <i class="fas fa-arrow-right d-none"></i>
+                <span id="pkg-val-after" class="right d-none green" style="position:absolute; right: 0px;">48%</span>
+              </h3>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card card-3">
               <h3 class="row">Waste</h3>
-              <h3 id="waste-avg" class="row" style="position:absolute; bottom: 0px;">7%</h3>
+              <h3 id="waste-avg" class="row" style="position:absolute; bottom: 0px; width: 65%;">
+                <span id="waste-val-before" class="left">29</span>%
+                <i class="fas fa-arrow-right d-none"></i>
+                <span id="waste-val-after" class="right d-none green" style="position:absolute; right: 0px;">48%</span>
+              </h3>
             </div>
           </div>
         </div>
@@ -76,58 +88,126 @@
           <h2>Eco-friendly options:</h2>
         </div>
         <div class="myScroll">
-          <ul id="options-container" class="list-group">
-            <li class="list-group-item co2-col" id="dynamic">
+          <ul id="options-container" class="list-group d-none">
+            <li class="list-group-item waste-col h-75" id="dynamic">
               <div class="container">
                 <div class="row h-50">
                   <div class="col-sm left" style="margin: 0px;">
-                    <h3 style="margin: 0px;">Cookies</h3>
-                    <h5 style="margin: 0px;">President's Choice</h5>
+                    <h3 style="margin: 0px;">Bananas</h3>
+                    <h5 style="margin: 0px;">LocalFarm</h5>
                   </div>
                   <div class="col-sm">
-                    
+                    <i class="fas fa-star fa-3x" style="color: rgb(255, 196, 0);"></i>
+                  </div>
+                  <div class="col-sm right">
+                    <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span
+                        style="color: rgb(80, 200, 120); font-family: 'Nunito';"> 39%</span></i>
+                    <div class="row nav-row">
+                      <button type="button" class="btn btn-outline-dark btn-sm right">View Breakdown</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item pkg-col h-75" id="dynamic">
+              <div class="container">
+                <div class="row h-50">
+                  <div class="col-sm left" style="margin: 0px;">
+                    <h3 style="margin: 0px;">Pringles Chips</h3>
+                    <h5 style="margin: 0px;">Pringles</h5>
+                  </div>
+                  <div class="col-sm">
+
                   </div>
                   <div class="col-sm right eco-score">
-                    <i class="fas fa-arrow-up fa-2x right myTooltip" style="color: rgb(80, 200, 120);"><span
-                      style="color: rgb(80, 200, 120); font-family: 'Nunito';"> 9%<span class="myTooltiptext">Tooltip text</span></span></i>
-                      
+                    <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span
+                        style="color: rgb(80, 200, 120); font-family: 'Nunito';"> 17%</span></i>
+                    <div class="row nav-row">
+                      <button type="button" class="btn btn-outline-dark btn-sm right">View Breakdown</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="list-group-item pkg-col " id="dynamic">
+            <li class="list-group-item co2-col h-75" id="dynamic">
               <div class="container">
                 <div class="row h-50">
                   <div class="col-sm left" style="margin: 0px;">
-                    <h3 style="margin: 0px;">Cookies</h3>
-                    <h5 style="margin: 0px;">President's Choice</h5>
+                    <h3 style="margin: 0px;">Atlantic Salmon</h3>
+                    <h5 style="margin: 0px;">OCEAN JEWEL</h5>
                   </div>
                   <div class="col-sm">
-                    
+
                   </div>
-                  <div class="col-sm right myTooltip">
+                  <div class="col-sm right">
                     <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span
-                      style="color: rgb(80, 200, 120); font-family: 'Nunito';"> 9%</span></i>
+                        style="color: rgb(80, 200, 120); font-family: 'Nunito';"> 29%</span></i>
+                    <div class="row nav-row">
+                      <button type="button" class="btn btn-outline-dark btn-sm right">View Breakdown</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </li>
-            <li class="list-group-item waste-col" id="dynamic">
+            <li class="list-group-item co2-col h-75" id="dynamic">
               <div class="container">
                 <div class="row h-50">
                   <div class="col-sm left" style="margin: 0px;">
-                    <h3 style="margin: 0px;">Cookies</h3>
-                    <h5 style="margin: 0px;">President's Choice</h5>
+                    <h3 style="margin: 0px;">Eggs</h3>
+                    <h5 style="margin: 0px;">Ground Flax</h5>
                   </div>
                   <div class="col-sm">
-                    
                   </div>
-                  <div class="col-sm right myTooltip">
+                  <div class="col-sm right">
                     <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span
-                      style="color: rgb(80, 200, 120); font-family: 'Nunito';"> 9%</span></i>
+                        style="color: rgb(80, 200, 120); font-family: 'Nunito';"> 11%</span></i>
+                    <div class="row nav-row">
+                      <button type="button" class="btn btn-outline-dark btn-sm right">View Breakdown</button>
+                    </div>
                   </div>
                 </div>
               </div>
+            </li>
+            <li class="list-group-item waste-col h-75" id="dynamic">
+              <div class="container">
+                <div class="row h-50">
+                  <div class="col-sm left" style="margin: 0px;">
+                    <h3 style="margin: 0px;">Apples</h3>
+                    <h5 style="margin: 0px;">LocalFarm</h5>
+                  </div>
+                  <div class="col-sm">
+                    <i class="fas fa-star fa-3x" style="color: rgb(255, 196, 0);"></i>
+                  </div>
+                  <div class="col-sm right">
+                    <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span
+                        style="color: rgb(80, 200, 120); font-family: 'Nunito';"> 36%</span></i>
+                    <div class="row nav-row">
+                      <button type="button" class="btn btn-outline-dark btn-sm right">View Breakdown</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item co2-col h-75" id="dynamic">
+              <div class="container">
+                <div class="row h-50">
+                  <div class="col-sm left" style="margin: 0px;">
+                    <h3 style="margin: 0px;">Turkey Bacon</h3>
+                    <h5 style="margin: 0px;">Great Value</h5>
+                  </div>
+                  <div class="col-sm">
+
+                  </div>
+                  <div class="col-sm right">
+                    <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span
+                        style="color: rgb(80, 200, 120); font-family: 'Nunito';"> 13%</span></i>
+                    <div class="row nav-row">
+                      <button type="button" class="btn btn-outline-dark btn-sm right">View Breakdown</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>

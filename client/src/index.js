@@ -46,7 +46,7 @@ function countryResize() {
   footprint.addClass("average-footprint");
 }
 
-$(".switch").on("input", function myFootprint() {
+$(".slider .round").click(function myFootprint() {
   console.log(myFootprint);
   $(".my-footprint").css('transform', 'scale(' + myFootprint + ')');
 });

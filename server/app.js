@@ -24,7 +24,7 @@ app.get('/receipt', (res, req) => {
           items.push(text.description);
         }
       });
-      axios.post('http://e5beaf7a.ngrok.io/receiptData', {
+      axios.post('http://fe40cd87.ngrok.io/receiptData', {
           parameters: {
             data: [{
                 item: "Ground Beef",

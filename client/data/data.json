@@ -1,0 +1,105 @@
+[ Item {
+  name: 'ground chicken',
+  price: 9.6,
+  co2_in_kg: 6.9,
+  eco_score: 2,
+  recommendation: [ '' ],
+  id: '5e3624690537ba7285309518' },
+Item {
+  name: 'ground beef',
+  price: 11.32,
+  co2_in_kg: 8,
+  eco_score: 8,
+  recommendation:
+   [ Item {
+       name: 'ground chicken',
+       price: 9.6,
+       co2_in_kg: 6.9,
+       eco_score: 2,
+       recommendation: [ '' ],
+       id: '5e3624690537ba7285309518' } ],
+  id: '5e3624699935ee4a76cfe9ef' },
+Item {
+  name: 'pringles',
+  price: 1.52,
+  co2_in_kg: 0.18,
+  eco_score: 1,
+  recommendation: [ '' ],
+  id: '5e3624693a4abe0d78110493' },
+Item {
+  name: 'lays chips',
+  price: 1.25,
+  co2_in_kg: 0.18,
+  eco_score: 1,
+  recommendation:
+   [ Item {
+       name: 'pringles',
+       price: 1.52,
+       co2_in_kg: 0.18,
+       eco_score: 1,
+       recommendation: [ '' ],
+       id: '5e3624693a4abe0d78110493' } ],
+  id: '5e362469e61201809b77c5f1' },
+Item {
+  name: 'atlantic salmon',
+  price: 17.99,
+  co2_in_kg: 2.5,
+  eco_score: 3,
+  recommendation: [ '' ],
+  id: '5e362469358e1e0dc0192d98' },
+Item {
+  name: 'tuna',
+  price: 9.98,
+  co2_in_kg: 6.1,
+  eco_score: 6,
+  recommendation:
+   [ Item {
+       name: 'atlantic salmon',
+       price: 17.99,
+       co2_in_kg: 2.5,
+       eco_score: 3,
+       recommendation: [ '' ],
+       id: '5e362469358e1e0dc0192d98' } ],
+  id: '5e362469331fc494e26c36dd' },
+Item {
+  name: 'ground flax',
+  price: 1.99,
+  co2_in_kg: 0.02,
+  eco_score: 2,
+  recommendation: [ '' ],
+  id: '5e3624697a7fae17599c9240' },
+Item {
+  name: 'eggs',
+  price: 4.25,
+  co2_in_kg: 4.8,
+  eco_score: 4,
+  recommendation:
+   [ Item {
+       name: 'ground flax',
+       price: 1.99,
+       co2_in_kg: 0.02,
+       eco_score: 2,
+       recommendation: [ '' ],
+       id: '5e3624697a7fae17599c9240' } ],
+  id: '5e362469a9c3c405f5a4e12a' },
+Item {
+  name: 'turkey bacon',
+  price: 6.99,
+  co2_in_kg: 10.9,
+  eco_score: 5,
+  recommendation: [ '' ],
+  id: '5e362469a0c710b79d08630c' },
+Item {
+  name: 'pork bacon',
+  price: 5.99,
+  co2_in_kg: 12.1,
+  eco_score: 5,
+  recommendation:
+   [ Item {
+       name: 'turkey bacon',
+       price: 6.99,
+       co2_in_kg: 10.9,
+       eco_score: 5,
+       recommendation: [ '' ],
+       id: '5e362469a0c710b79d08630c' } ],
+  id: '5e3624696e51f2f8c3b2d571' } ]

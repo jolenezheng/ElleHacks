@@ -3,46 +3,42 @@ function countryResize() {
     countryName = $("#country").val();
     footprint = $(".average-footprint");
     console.log(countryName);
+    console.log(footprint);
     if (countryName === "Canada") {
         // 16.1
-        footprint.style.width = "100%";
-        footprint.style.height = "100%";
+        footprint.addClass("canada-size");
     } else if (countryName === "China") {
         // 8.0
-        footprint.style.width = "49%";
-        footprint.style.height = "49%";
+        footprint.addClass("china-size");
     } else if (countryName === "India") {
         // 1.9
-        footprint.style.width = "12%";
-        footprint.style.height = "12%";
+        footprint.addClass("india-size");
     } else if (countryName === "Norway") {
         // 9.4
-        footprint.style.width = "58%";
-        footprint.style.height = "58%";
+        footprint.addClass("norway-size");
     } else if (countryName === "Russia") {
         // 12.1
-        footprint.style.width = "78%";
-        footprint.style.height = "78%";
+        footprint.addClass("russia-size");
     } else if (countryName === "United Kingdom") {
         // 5.6 
-        footprint.style.width = "35%";
-        footprint.style.height = "35%";
+        footprint.addClass("uk-size");
     } else if (countryName === "United States of America") {
         // 17.0
-        footprint.style.width = "105%";
-        footprint.style.height = "105%";
-    } else {
-        footprint.style.width = "100%";
-        footprint.style.height = "100%";
+        footprint.addClass("usa-size");
     }
 }
 
-function myFootprint() {
-    var avgC02, avgPKG, avgWASTE;
-    
-}
+$(".switch").on("input", function myFootprint() {
+    $(".my-footprint").css("transform, scale('myFootprint');")
+});
+
+$( "div" ).click(function() {
+    var color = $( this ).css( "background-color" );
+    $( "#result" ).html( "That div is <span style='color:" +
+      color + ";'>" + color + "</span>." );
+  });
 const itemNode = $('#alternative-template');
-var myFootprint = 0;
+var myFootprint = 0.50;
 var alternatives = [1, 2, 3];
 var numAlt = alternatives.length;
 var mylist = $("#options-container");

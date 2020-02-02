@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -17,7 +18,6 @@
   
   <script src="src/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="../server/app.js"></script>
-  <script type="text/javascript" src="/src/index.js"></script>
   <title>ElleHacks</title>
 </head>
 
@@ -25,90 +25,49 @@
 
   <div class="container-fluid header-bar">
     <div class="navbar-header">
-      <h1 class="logo"><span>Food</span><span class="green">Pact</span></h1>
+      <h1 class="logo" style="font-size: 40px;"><span>Food</span><span class="green">Pact</span></h1>
     </div>
   </div>
 
   <div class="container-fluid text-center">
     <div class="col-sm-6 text-left">
-      <h2 class="date">Febuary 2, 2020</h2>
+      <h2 class="date">February 2, 2020</h2>
       <div class="footprint">
         <img src="average-foot.png" class="average-footprint"></img>
         <img src="your-footprint.png" class="your-footprint"></img>
       </div>
       <hr>
       <div>
-        <select onclick="countryResize()" id="country" name="country">
+        <select onchange="countryResize()" id="country" name="country">
           <option value="Canada">Canada</option>
           <option value="China">China</option>
           <option value="India">India</option>
-          <option value="Jamaica">Norway</option>
+          <option value="Norway">Norway</option>
           <option value="Russia">Russia</option>
           <option value="United Kingdom">United Kingdom</option>
           <option value="United States of America">United States of America</option>
         </select>
       </div>
     </div>
-    <script>
-    function countryResize() {
-     var dropdown, country, txtValue, footprint;
-     dropdown = document.getElementsByClassName("country").classList.toggle("select");
-     country = dropdown.getElementsByTagName("option").toArray();
-     footprint = document.getElementsByClassName("average-footprint");
-     for (i = 0; i < country.length; i++) {
-        countryName = country[i].getAttribute("value")[0];
-        txtValue = countryName.textContent || countryName.innerText;
-        if (txtValue === "Canada") {
-            // 16.1
-            footprint.style.width = "100%";
-            footprint.style.height = "100%";
-        } else if (txtValue === "China") {
-            // 8.0
-            footprint.style.width = "49%";
-            footprint.style.height = "49%";
-        } else if (txtValue === "India") {
-            // 1.9
-            footprint.style.width = "12%";
-            footprint.style.height = "12%";
-        } else if (txtValue === "Norway") {
-            // 9.4
-            footprint.style.width = "58%";
-            footprint.style.height = "58%";
-        } else if (txtValue === "Russia") {
-            // 12.1
-            footprint.style.width = "78%";
-            footprint.style.height = "78%";
-        } else if (txtValue === "United Kingdom") {
-            // 5.6 
-            footprint.style.width = "35%";
-            footprint.style.height = "35%";
-        } else if (txtValue === "United States of America") {
-            // 17.0
-            footprint.style.width = "105%";
-            footprint.style.height = "105%";
-        } else {
-            footprint.style.width = "100%";
-            footprint.style.height = "100%";
-        }
-    }
-}
-</script>
     <div class="col-sm-6 sidenav">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
             <div class="card card-1">
               <h3 class="row">CO2</h3>
+              <h3 id="co2-avg" class="row" style="position:absolute; bottom: 0px;">7%</h3>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card card-2">
-              <h3 class="row category-text">Packaging</h3class="row">
+              <h3 class="row">Packaging</h3>
+              <h3 id="pkg-avg" class="row" style="position:absolute; bottom: 0px;">7%</h3>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card card-3">
               <h3 class="row">Waste</h3>
+              <h3 id="waste-avg" class="row" style="position:absolute; bottom: 0px;">7%</h3>
             </div>
           </div>
         </div>
@@ -117,28 +76,71 @@
         <div id="navbar-example2" class="card-header navbar-light bg-light">
           <h2>Eco-friendly options:</h2>
         </div>
-        <div data-spy="scroll" data-offset="0">
-          <ul class="list-group">
+        <div class="myScroll">
+          <ul id="options-container" class="list-group">
             <li class="list-group-item co2-col" id="dynamic">
-                <h3 class="left">Fish</h3>
-                <h5>Walmart</h5>
-                <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span style="color: rgb(80, 200, 120); font-family: 'Nunito';">  9%</span></i>
+              <div class="container">
+                <div class="row h-50">
+                  <div class="col-sm left" style="margin: 0px;">
+                    <h3 style="margin: 0px;">Cookies</h3>
+                    <h5 style="margin: 0px;">President's Choice</h5>
+                  </div>
+                  <div class="col-sm">
+                    
+                  </div>
+                  <div class="col-sm right eco-score">
+                    <i class="fas fa-arrow-up fa-2x right myTooltip" style="color: rgb(80, 200, 120);"><span
+                      style="color: rgb(80, 200, 120); font-family: 'Nunito';"> 9%<span class="myTooltiptext">Tooltip text</span></span></i>
+                      
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="list-group-item pkg-col" id="dynamic">
-                <h3 class="left">Cookies</h3>
-                <h5 class="left">President's Choice</h5>
-                <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span style="color: rgb(80, 200, 120); font-family: 'Nunito';">  9%</span></i>
+            <li class="list-group-item pkg-col " id="dynamic">
+              <div class="container">
+                <div class="row h-50">
+                  <div class="col-sm left" style="margin: 0px;">
+                    <h3 style="margin: 0px;">Cookies</h3>
+                    <h5 style="margin: 0px;">President's Choice</h5>
+                  </div>
+                  <div class="col-sm">
+                    
+                  </div>
+                  <div class="col-sm right myTooltip">
+                    <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span
+                      style="color: rgb(80, 200, 120); font-family: 'Nunito';"> 9%</span></i>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="list-group-item waste-col" id="dynamic">
-                <h3 class="left">Mac n Cheese</h3>
-                <h5 class="left">No name</h5>
-                <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span style="color: rgb(80, 200, 120); font-family: 'Nunito';">  9%</span></i>
-            </li>
+              <div class="container">
+                <div class="row h-50">
+                  <div class="col-sm left" style="margin: 0px;">
+                    <h3 style="margin: 0px;">Cookies</h3>
+                    <h5 style="margin: 0px;">President's Choice</h5>
+                  </div>
+                  <div class="col-sm">
+                    
+                  </div>
+                  <div class="col-sm right myTooltip">
+                    <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span
+                      style="color: rgb(80, 200, 120); font-family: 'Nunito';"> 9%</span></i>
+                  </div>
+                </div>
+              </div>
           </ul>
         </div>
       </div>
-      <form class="upload" action="/action_page.php">
+      <!-- <form class="upload" action="/action_page.php">
         <input type="file" id="myReceipt" name="receipt"><input type="submit">
+      </form> -->
+      <br>
+      <form>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="customFile">
+          <label class="custom-file-label" for="customFile">Choose file</label>
+        </div>
       </form>
       <label class="switch">
         <input type="checkbox">
@@ -147,10 +149,10 @@
     </div>
   </div>
   </div>
+  <script type="text/javascript" src="src/index.js"></script>
 
   <footer class="container-fluid text-center">
   </footer>
-
+  <script type="text/javascript" src="/src/index.js"></script>
 </body>
-
 </html>

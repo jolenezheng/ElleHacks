@@ -38,12 +38,15 @@
     position: relative;
     top: 0;
     left: 0;
+    z-index: -1;
+    width: default;
+    height: default;
   }
   .your-footprint {
     position: absolute;
-    top: 4px;
-    left: 5px;
-    max-width: 68%;
+    top: -2px;
+    left: -7px;
+    width: 70%;
   }
 
 #navbar-example2 {

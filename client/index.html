@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,900">
   <script src="src/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="../server/app.js"></script>
   <title>ElleHacks</title>
@@ -22,11 +23,7 @@
 
   <div class="container-fluid header-bar">
     <div class="navbar-header">
-<<<<<<< HEAD
-      <h1 class="logo"><span>Food</span><span class="green">Print</span></h1>
-=======
-      <h1><span class="logo">Food</span><span class="logo green">Print</span></h1>
->>>>>>> 52d4d64fc7954b69eb2103aee59560c63925247a
+      <h1 class="logo"><span>Food</span><span class="green">Pact</span></h1>
     </div>
   </div>
 
@@ -51,31 +48,21 @@
       </div>
     </div>
     <div class="col-sm-6 sidenav">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="card co2-style">
-            <div class="card-body">
-              <h5 class="card-title">CO2</h5>
-              <img class="card-img"></img>
-              <h6 class="card-text">Go somewhere</h6>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-1">
+              <h3 class="row">CO2</h3>
             </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body pkg-style">
-              <h5 class="card-title">PACKAGING</h5>
-              <img class="card-img"></img>
-              <h6 class="card-text">Go somewhere</h6>
+          <div class="col-md-4">
+            <div class="card card-2">
+              <h3 class="row category-text">Packaging</h3class="row">
             </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card waste-style">
-            <div class="card-body">
-              <h5 class="card-title">WASTE</h5>
-              <img class="card-img"></img>
-              <h6 class="card-text">Go somewhere</h6>
+          <div class="col-md-4">
+            <div class="card card-3">
+              <h3 class="row">Waste</h3>
             </div>
           </div>
         </div>
@@ -86,36 +73,20 @@
         </div>
         <div data-spy="scroll" data-offset="0">
           <ul class="list-group">
-            <li class="list-group-item waste-col py-5" id="dynamic">
-              <span class="left">Cras justo odio</span>
-              <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 30%</i>
+            <li class="list-group-item co2-col" id="dynamic">
+                <h3 class="left">Fish</h3>
+                <h5>Walmart</h5>
+                <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span style="color: rgb(80, 200, 120); font-family: 'Nunito';">  9%</span></i>
             </li>
-            <li class="list-group-item co2-col py-5" id="dynamic">
-              <span class="left">Cras justo odio</span>
-              <div data-toggle="tooltip" data-placement="top" title="Hooray!">
-                <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 18%</i>
-              </div>
+            <li class="list-group-item pkg-col" id="dynamic">
+                <h3 class="left">Cookies</h3>
+                <h5 class="left">President's Choice</h5>
+                <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span style="color: rgb(80, 200, 120); font-family: 'Nunito';">  9%</span></i>
             </li>
-            <li class="list-group-item pkg-col py-5" id="dynamic">
-              <h1 class="left item-text">Bananas</h1>
-              <h2 class="left company-text">Walmart</h2>
-              <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 9%</i>
-            </li>
-            <li class="list-group-item waste-col py-5" id="dynamic">
-              <span class="left">Cras justo odio</span>
-              <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 39%</i>
-            </li>
-            <li class="list-group-item co2-col py-5" id="dynamic">
-              <span class="left">Cras justo odio</span>
-              <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 84%</i>
-            </li>
-            <li class="list-group-item co2-col py-5" id="dynamic">
-              <span class="left">Cras justo odio</span>
-              <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 84%</i>
-            </li>
-            <li class="list-group-item pkg-col py-5" id="dynamic">
-              <span class="left">Cras justo odio</span>
-              <i class="fas fa-arrow-up fa-2x right" style="color: green;"> 9%</i>
+            <li class="list-group-item waste-col" id="dynamic">
+                <h3 class="left">Mac n Cheese</h3>
+                <h5 class="left">No name</h5>
+                <i class="fas fa-arrow-up fa-2x right" style="color: rgb(80, 200, 120);"><span style="color: rgb(80, 200, 120); font-family: 'Nunito';">  9%</span></i>
             </li>
           </ul>
         </div>

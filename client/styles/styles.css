@@ -1,6 +1,6 @@
 /* Remove the navbar's default margin-bottom and rounded borders */ 
 .header-bar {
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid rgb(80, 200, 120);
 }
 .logo {
     margin-top: 20px;
@@ -10,6 +10,9 @@
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {height: 450px}
+
+.category-text {
+}
 
 /* Set gray background color and 100% height */
 .sidenav {
@@ -24,7 +27,7 @@
 }
 
 .green {
-  color: green;
+  color: rgb(80, 200, 120);
 }
 .footprint {
     position: relative;
@@ -38,8 +41,8 @@
   }
   .your-footprint {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 4px;
+    left: 5px;
     max-width: 68%;
   }
 
@@ -49,6 +52,15 @@
 
 .upload {
     margin-top: 10px;
+}
+
+.list-group {
+    height: 250px;
+}
+.list-group-item {
+    height: 50px;
+    margin-bottom: 1px;
+    border-radius: 5px;
 }
 
 /* The switch - the box around the slider */
@@ -117,7 +129,7 @@ input:checked + .slider:before {
 
 /* Set black background color, white text and some padding */
 footer {
-    background-color: black;
+    background-color: rgb(80, 200, 120);
     color: white;
     padding: 15px;
 }
@@ -147,35 +159,85 @@ footer {
   font-size: 12px;
 }
 
-.waste-col {
-  color: rgb(104, 77, 54);
-  background-color: rgb(247, 234, 222);
+.co2-col {
+    border: 3px solid rgb(192,192,192);
 }
 
 .pkg-col {
-  color: rgb(54, 74, 104);
-  background-color: rgb(226, 236, 250);
+    border: 3px solid rgb(100, 149, 237);
 }
 
-.co2-col {
-  color: rgb(77, 77, 77);
-  background-color: rgb(233, 230, 230);
+.waste-col{
+    border: 3px solid rgb(255, 223, 0);
 }
 
 .waste-style {
   color: rgb(114, 79, 48);
   outline: 1px solid rgb(207, 152, 107);
   background-color: rgb(247, 234, 222);
+  border-radius: 5px;
 }
 
 .pkg-style {
   color: rgb(54, 74, 104);
-  outline: 1px solid rgb(118, 160, 214);
+  border: 5px solid rgb(100, 149, 237);
   background-color: rgb(222, 232, 245);
+  border-radius: 5px;
 }
 
 .co2-style {
   color: rgb(80, 80, 80);
-  outline: 1px solid rgb(194, 194, 194);
+  border: 5px solid rgb(194, 194, 194);
   background-color: rgb(240, 240, 240);
+  border-radius: 5px;
 }
+
+body{
+    font-family: 'Nunito', sans-serif;
+  }
+  .card{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+  }
+  
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+  
+  .card h3{
+    font-weight: 600;
+  }
+  
+  .card-1{
+    background-image: url(https://lh3.googleusercontent.com/proxy/4giP9B50sXiJEZMOn6LXidBHNKHUERD62f-MTXWjFdoihGbU10Jxo7MjiUZoxwIFm0r1VxKUmiBPrT3rIrWl5p5bqH_BXEYEr2pTa0NdgQlsQQ);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+  }
+  
+  .card-2{
+    background-image: url(https://lh3.googleusercontent.com/proxy/yP45gB0R8rPbjSb_YZc1z0pjQrhdgrJnXRLkrhsLR8oDnwU62RKFaBRvcwp9ErJww6EiA7LztfzU_ZOxeiTQbJHDspzSuc5WvlmWeTxHQZQEtzG2QGP1q41reXG3g4qiAk75-Bpuhw3D2uTR1p3wGj42Um7n3gmFrJk2-7zoHTfWlw6DNTFeRje6QNl3Q9NiYcBuBQ);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+  }
+  
+  .card-3{
+    background-image: url(https://i.pinimg.com/originals/d2/55/e0/d255e0fc17334b08d22248515e5476a0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+  }
+  
+  @media(max-width: 990px){
+    .card{
+      margin: 20px;
+    }
+  } 

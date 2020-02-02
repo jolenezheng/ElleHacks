@@ -23,7 +23,6 @@
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 .title {
   font-size: 30px;
 }
@@ -31,7 +30,6 @@
 .green {
   color: green;
 }
-=======
 .footprint {
     position: relative;
     top: 0;
@@ -48,7 +46,6 @@
     left: 0px;
     max-width: 68%;
   }
->>>>>>> origin/frontend
 
 #navbar-example2 {
     margin-top: 25px;

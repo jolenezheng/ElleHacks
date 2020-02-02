@@ -113,7 +113,7 @@
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+  background-color: rgb(80, 200, 120);
 }
 
 input:focus + .slider {
@@ -352,6 +352,16 @@ body{
 
 .usa-size {
   transform: scale(1.05);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.new-size {
+  display: flex;
+  position: absolute;
+  top: -2px;
+  left: -4px;
+  transform: scale(0.5);
   -webkit-transition: .5s;
   transition: .5s;
 }

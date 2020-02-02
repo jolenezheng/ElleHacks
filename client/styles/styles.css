@@ -3,8 +3,8 @@
     border-bottom: 5px solid black;
 }
 .logo {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 0;
 }
 
@@ -23,15 +23,9 @@
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-.title {
-  font-size: 30px;
-}
-
 .green {
   color: green;
 }
-=======
 .footprint {
     position: relative;
     top: 0;
@@ -48,7 +42,6 @@
     left: 0px;
     max-width: 68%;
   }
->>>>>>> origin/frontend
 
 #navbar-example2 {
     margin-top: 25px;

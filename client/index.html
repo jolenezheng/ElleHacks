@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,900">
+  
   <script src="src/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="../server/app.js"></script>
   <title>ElleHacks</title>
@@ -37,11 +38,11 @@
       </div>
       <hr>
       <div>
-        <select id="country" name="country">
+        <select onchange="countryResize()" id="country" name="country">
           <option value="Canada">Canada</option>
           <option value="China">China</option>
           <option value="India">India</option>
-          <option value="Jamaica">Jamaica</option>
+          <option value="Norway">Norway</option>
           <option value="Russia">Russia</option>
           <option value="United Kingdom">United Kingdom</option>
           <option value="United States of America">United States of America</option>
@@ -220,7 +221,7 @@
           <input type="file" class="custom-file-input w-75" id="customFile">
           <label class="custom-file-label w-75" for="customFile">Choose file</label>
         </div>
-        <button id="test-btn" type="button" class="btn btn-success">UPLOAD</button>
+        <button id="upload-btn" type="button" class="btn btn-success">UPLOAD</button>
 
       </form>
       <label class="switch">
@@ -234,7 +235,6 @@
 
   <footer class="container-fluid text-center">
   </footer>
-
+  <script type="text/javascript" src="/src/index.js"></script>
 </body>
-
 </html>

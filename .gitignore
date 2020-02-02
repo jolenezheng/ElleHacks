@@ -1,2 +1,4 @@
 .DS_Store
 SERVICE-KEY.json
+node_modules
+server/node_modules

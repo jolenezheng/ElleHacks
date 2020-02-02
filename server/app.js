@@ -4,7 +4,6 @@ const app = express();
 const bodyParser = require('body-parser')
 const axios = require('axios')
 const vision = require('@google-cloud/vision');
-var file = require('../client/src/index.js').file;
 
 app.use(express.json());
 
@@ -17,16 +16,15 @@ app.get('/receipt', (res, req) => {
   const regex = /\d/g;
   // Performs label detection on the image file
   client
-    .textDetection('client/images/' + file)
+    .textDetection('client/images/receipt.png')
     .then(results => {
       const detections = results[0].textAnnotations.slice(1);
       detections.forEach(function (text) {
         if (!regex.test(text.description)) {
-          console.log(text.description);
           items.push(text.description);
         }
       });
-      axios.post('https://d96bb644.ngrok.io/receiptData', {
+      axios.post('http://fe40cd87.ngrok.io/receiptData', {
           parameters: {
             data: [{
                 item: "Ground Beef",

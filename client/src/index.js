@@ -67,7 +67,7 @@ $('.btn-outline-dark').click(function () {
   co2 = avg + 18;
   pkg = avg - 7;
   waste = avg - 11;
-  myFootprint = 0.5 + (((co2 + pkg + waste) / 3).toFixed(0) / 100);
+  myFootprint = 0.5 - (((co2 + pkg + waste) / 3).toFixed(0) / 100);
   console.log(myFootprint);
   $('#co2-val-after').html(co2.toFixed(0) + "%");
   $('#co2-val-after').removeClass('d-none');

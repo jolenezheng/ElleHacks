@@ -143,12 +143,27 @@ footer {
 .row.content {height:auto;} 
 }
 
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .left {
   float: left;
 }
 
 .right {
   float: right;
+}
+
+.bottom {
+  float: bottom;
 }
 
 .item-text {
